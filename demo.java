@@ -26,6 +26,10 @@ while(true){
       rows =Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero de filas:"));
       col =Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero de columnas:"));
 
+      if (col<rows) {
+        col=rows-col;
+      }
+
       int [][] vector = new int[rows][col];
       //LLlenando vector
         for (int i=0;i<vector.length;i++) {
