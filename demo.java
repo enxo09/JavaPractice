@@ -26,7 +26,7 @@ while(true){
       rows =Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero de filas:"));
       col =Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero de columnas:"));
 
-      if (col<rows) {
+      if (rows>col) {
         col=rows-col;
       }
 
