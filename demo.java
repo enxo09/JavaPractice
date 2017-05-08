@@ -36,8 +36,9 @@ while(true){
       //Imprimiendo valores del vector
         for (int i=0;i<vector.length;i++) {
           for (int j=0;j<vector[0].length;j++) {
-                System.out.println(vector[i][j]+" ");
+                System.out.print(vector[i][j]);
           }
+            System.out.println(" ");
         }
 
       //Ignora siguiente proceso si excepcion se cumple y regresa al comienzo
