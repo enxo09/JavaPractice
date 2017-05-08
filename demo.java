@@ -32,7 +32,7 @@ while(true){
       //Imprimiendo valores del vector
         for (int i=0;i<vector.length;i++) {
 
-          System.out.println(vector[i]);
+          System.out.println(vector[i]+" ");
 
       }
 
