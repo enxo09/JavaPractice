@@ -22,7 +22,7 @@ while(true){
   try {
 
       //Captura Datos
-      rows =Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero:"));
+      rows =Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero del 1 al 10:"));
 
       int [] vector = new int[rows];
       //LLlenando vector
@@ -32,7 +32,7 @@ while(true){
       //Imprimiendo valores del vector
         for (int i=0;i<vector.length;i++) {
 
-          System.out.print(vector[i]);
+          System.out.println(vector[i]);
 
       }
 
