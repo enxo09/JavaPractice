@@ -13,28 +13,27 @@ public class demo{
 
 public static void main(String[] args) {
 
-//Variable global-Tamaño Vector
-int rows=0;
-int col=0;
+
+
 
 //Ciclo controlador de excepciones
 while(true){
 
   try {
 
+      int rows,col;
       //Captura Datos
       rows =Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero de filas:"));
       col =Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero de columnas:"));
 
-      if (rows>col) {
-        col=rows-col;
+
 
 
       int [][] vector = new int[rows][col];
       //LLlenando vector
         for (int i=0;i<vector.length;i++) {
           for (int j=0;j<vector[0].length;j++) {
-              vector[i][j]=i+2*3;
+              vector[i][j]=(int)(Math.floor(Math.random()*3));
           }
         }
       //Imprimiendo valores del vector
@@ -44,7 +43,7 @@ while(true){
           }
             System.out.println(" ");
         }
-      }
+
 
       //Ignora siguiente proceso si excepcion se cumple y regresa al comienzo
       break;
