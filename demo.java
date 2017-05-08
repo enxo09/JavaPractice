@@ -28,7 +28,7 @@ while(true){
 
       if (rows>col) {
         col=rows-col;
-      }
+
 
       int [][] vector = new int[rows][col];
       //LLlenando vector
@@ -44,6 +44,7 @@ while(true){
           }
             System.out.println(" ");
         }
+      }
 
       //Ignora siguiente proceso si excepcion se cumple y regresa al comienzo
       break;
