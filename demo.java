@@ -15,6 +15,7 @@ public static void main(String[] args) {
 
 //Variable global-Tamaño Vector
 int rows=0;
+int col=0;
 
 //Ciclo controlador de excepciones
 while(true){
@@ -22,19 +23,22 @@ while(true){
   try {
 
       //Captura Datos
-      rows =Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero del 1 al 10:"));
+      rows =Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero de filas:"));
+      col =Integer.parseInt(JOptionPane.showInputDialog("Ingrese numero de columnas:"));
 
-      int [] vector = new int[rows];
+      int [][] vector = new int[rows][col];
       //LLlenando vector
         for (int i=0;i<vector.length;i++) {
-          vector[i]=i+2*3;
-      }
+          for (int j=0;j<vector[0].length;j++) {
+              vector[i][j]=i+2*3;
+          }
+        }
       //Imprimiendo valores del vector
         for (int i=0;i<vector.length;i++) {
-
-          System.out.println(vector[i]+" ");
-
-      }
+          for (int j=0;j<vector[0].length;j++) {
+                System.out.println(vector[i][j]+" ");
+          }
+        }
 
       //Ignora siguiente proceso si excepcion se cumple y regresa al comienzo
       break;
