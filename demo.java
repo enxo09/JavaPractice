@@ -52,8 +52,6 @@ while(true){
         //Imprime mensaje si hay una excepcion
         JOptionPane.showMessageDialog(null,"Por favor ingrese solo numeros");
 
-      }finally{
-        System.out.println("El Programa se cerrara!!!");
       }
 }
 
