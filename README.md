@@ -1,2 +1,2 @@
 # JavaPractice
-Practicas en lenguaje Java
+Practice makes a master.
